@@ -68,8 +68,7 @@ fun TopBar_Icon_Text(
             .padding(PaddingValues(paddingValues.dp))
     ) {
         IconButton(modifier = Modifier
-            .size(iconsSize.dp)
-            .padding(0.dp, 0.dp, end = iconRightPadding.dp, 0.dp),
+            .size(iconsSize.dp),
             onClick = onBackButtonClick,
             content = {
                 Icon(
@@ -81,6 +80,9 @@ fun TopBar_Icon_Text(
 
         when (titleAlignment) {
             TitleAlignment.Left -> {
+                Spacer(
+                    Modifier.padding(0.dp, 0.dp, end = iconRightPadding.dp, 0.dp)
+                )
                 Text(
                     overflow = TextOverflow.Ellipsis,
                     color = textColor,

@@ -26,6 +26,5 @@ TopBar_Icon_Text(
             )
 ```
 
-![img.png](img.png)
 
 
