@@ -64,6 +64,7 @@ fun TopBar_Icon_Name_IconList(
         modifier = Modifier
             .fillMaxWidth()
             .background(backgroundColor)
+            .padding(8.dp)
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
 
