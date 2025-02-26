@@ -57,6 +57,8 @@ fun TopBar_Icon_Text(
     backgroundColor: Color = MaterialTheme.colorScheme.background,
     fontFamily: FontFamily = FontFamily.Serif,
     leftIcon: ImageVector = Icons.AutoMirrored.Filled.ArrowBack,
+
+    // Rename this function to be more descriptive based on the event it handles
     onBackButtonClick: () -> Unit = {}
 ) {
     Row(
