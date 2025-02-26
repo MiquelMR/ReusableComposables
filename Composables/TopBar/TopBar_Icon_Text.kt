@@ -44,8 +44,7 @@ import androidx.compose.ui.unit.sp
  * @param onBackButtonClick The callback function when the back button is clicked (no use by default).
  */
 @Composable
-fun TopBar_NavigationBack(
-
+fun TopBar_Icon_Text(
     text: String,
     iconsSize: Int = 24,
     fontSize: Int = 12,
