@@ -3,34 +3,26 @@ Composable functions for creating generic and customizable app elements
 
 ## Features ##
 
-- ** Generic Components **: Build app elements that can be reused across different projects
-- ** Customizable **: Tailor the components to fit your specific needs
-- ** Ease of Use **: Simply copy and paste the code into your project
+- **Generic Components**: Build app elements that can be reused across different projects
+- **Customizable**: Tailor the components to fit your specific needs
+- **Ease of Use**: Simply copy and paste the code into your project
 
 ## Usage Example ##
 
 ```kotlin
-fun TopBar_Logo_Icon(
-    iconsSize: Int = 40,
-    logoSize: Int = 60,
-    paddingValues: Int = 0,
-    iconTint: Color = MaterialTheme.colorScheme.primary,
-    backgroundColor: Color = MaterialTheme.colorScheme.background,
-    iconSide: IconSide = IconSide.Left,
+TopBar_Icon_Text_Icon(
+    textColor = Color.White,
+    backgroundColor = Color.Black,
+    iconTint = Color(0xFFFF5000),
+    fontFamily = fontFamily,
+    iconsSize = 40,
+    fontSize = 12,
+    leftIcon = Icons.Default.Menu,
+    text = "MyCompany",
+    rightIcon = Icons.Default.Add)
+```
 
-    // Consider renaming these parameters to be more descriptive and context-specific
-    logo: Painter,
-    icon: ImageVector = Icons.Default.Menu,
-
-    // Consider renaming these parameters to be more descriptive and context-specific
-    // No use by default
-    onButtonClick: () -> Unit = {},
-
-    // Suggestion: Use the text as a <navigation -> toHome> button
-    // No use by default
-    onLogoClick: () -> Unit = {}
-
-)
+![image](https://github.com/user-attachments/assets/c468b370-f96e-4bb9-9b52-89e8aff5b272)
 
 
 Just copy the .kt file in your project and call it from anywhere. The majority of the parameters are default
